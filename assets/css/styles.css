@@ -2,6 +2,19 @@ html {
   background: aqua;
   background-color: aqua;
 }
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+.btn {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 50px;
+}
 #main {
   display: flex;
   align-items: center;
@@ -11,14 +24,9 @@ html {
   flex-wrap: wrap;
   gap: 5px;
 }
-
-.w100 {
-  width: 100%;
-}
-
 .grid {
   background: #ffffff;
   background-color: #ffffff;
-  height: 55px;
-  width: 55px;
+  height: 20px;
+  flex-basis: 50px;
 }
