@@ -13,6 +13,11 @@ function createDivs(n) {
     }
   }
   const divs = Array.from(document.querySelectorAll('.grid'));
+  let flex = 960 / n - 5;
+  divs.forEach(div => {
+    div.style.flexBasis = `${flex}px`;
+    div.style.height = `${flex}px`;
+  });
   divs.forEach(div => {
     div.addEventListener('mouseover', () => {
       div.style.background = 'black';
